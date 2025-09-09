@@ -173,45 +173,43 @@ graph TD
 - pip (gestor de paquetes de Python)
 
 ### Pasos de instalación
-1. Clonar el repositorio:
-   ```bash
-git clone https://github.com/PatataPyhton/farmacia_traking_TFM.git
-cd farmacia_traking_TFM
-   ```
-2. Crear y activar un entorno virtual (recomendado):
-   ```bash
-python -m venv venv
-venv\Scripts\activate  # Windows
-# source venv/bin/activate  # Linux/Mac
-   ```
-3. Instalar dependencias:
-   ```bash
-pip install -r requirements.txt
-   ```
-4. Los modelos YOLOv5s y YOLOv8s ya están incluidos en el repositorio
+1.  Clonar el repositorio:
+    ```bash
+    git clone https://github.com/PatataPyhton/farmacia_traking_TFM.git
+    cd farmacia_traking_TFM
+    ```
+2.  Crear y activar un entorno virtual (recomendado):
+    ```bash
+    python -m venv venv
+    venv\Scripts\activate  # Windows
+    # source venv/bin/activate  # Linux/Mac
+    ```
+3.  Instalar dependencias:
+    ```bash
+    pip install -r requirements.txt
+    ```
+4.  Los modelos YOLOv5s y YOLOv8s ya están incluidos en el repositorio
 
 ## Uso
 ### Interfaz Gráfica Principal
 El sistema se opera completamente desde la interfaz gráfica, que sirve como punto de entrada único para todas las funcionalidades:
 
-1. **Iniciar la interfaz**:
-   ```bash
-python uiFarmacia_logo.py
-   ```
-
-2. **Configuración Inicial** (pestaña "Herramientas"):
-   - Seleccionar fuente de video (webcam o archivo)
-   - Especificar directorio de salida
-   - Ejecutar "Crear Línea" para definir líneas de conteo mediante clics del ratón
-   - Ejecutar "Crear Zonas" para definir áreas poligonales con nombres descriptivos
-   - Los archivos de configuración se guardan automáticamente como `line_coordinates.json` y `zonas_config.json`
-
-3. **Procesamiento y Análisis** (pestaña "Procesamiento y Control"):
-   - Seleccionar fuentes de video y archivos de configuración
-   - Presionar "Iniciar Conteo" para activar el sistema de conteo básico (YOLOv5)
-   - Presionar "Iniciar Tracking" para activar el sistema avanzado de seguimiento (YOLOv8 + DeepSORT)
-   - Controlar en tiempo real mediante botones de la interfaz (no mediante teclas)
-   - Visualizar resultados en la ventana principal de la interfaz
+1.  **Iniciar la interfaz**:
+    ```bash
+    python uiFarmacia_logo.py
+    ```
+2.  **Configuración Inicial** (pestaña "Herramientas"):
+    -   Seleccionar fuente de video (webcam o archivo)
+    -   Especificar directorio de salida
+    -   Ejecutar "Crear Línea" para definir líneas de conteo mediante clics del ratón
+    -   Ejecutar "Crear Zonas" para definir áreas poligonales con nombres descriptivos
+    -   Los archivos de configuración se guardan automáticamente como `line_coordinates.json` y `zonas_config.json`
+3.  **Procesamiento y Análisis** (pestaña "Procesamiento y Control"):
+    -   Seleccionar fuentes de video y archivos de configuración
+    -   Presionar "Iniciar Conteo" para activar el sistema de conteo básico (YOLOv5)
+    -   Presionar "Iniciar Tracking" para activar el sistema avanzado de seguimiento (YOLOv8 + DeepSORT)
+    -   Controlar en tiempo real mediante botones de la interfaz (no mediante teclas)
+    -   Visualizar resultados en la ventana principal de la interfaz
 
 ### Flujo de Trabajo Completo
 El sistema sigue un flujo estructurado en cuatro fases:
