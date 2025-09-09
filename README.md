@@ -27,11 +27,6 @@
 | **Privacidad garantizada** | Pixelado en tiempo real y procesamiento local sin transmisión externa |
 | **Interfaz intuitiva** | Diseño pensado para usuarios no técnicos con CustomTkinter |
 
-## 📹 Demo
-
-![Ejemplo de sistema en funcionamiento](heatmaps/heatmap_20250719_171634.png)
-
-_Ejemplo de mapa de calor generado por el sistema mostrando patrones de tráfico en una farmacia_
 
 ## 🖼️ Galería
 
