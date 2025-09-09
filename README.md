@@ -33,6 +33,39 @@
 
 _Ejemplo de mapa de calor generado por el sistema mostrando patrones de tráfico en una farmacia_
 
+## 🖼️ Galería
+
+### **Interfaz Principal**
+
+La interfaz principal de la aplicación, desarrollada con CustomTkinter, ofrece un diseño moderno y accesible. Desde aquí, se pueden acceder a todas las herramientas de configuración, procesamiento y visualización.
+
+| ![Interfaz principal de la aplicación, mostrando las diferentes pestañas de configuración y control.](extras/Imagenes/frontal1.jpg) | ![Segunda captura de la interfaz principal, detallando las opciones de procesamiento en tiempo real.](extras/Imagenes/frontal2.jpg) |
+| :---: | :---: |
+| *Vista principal del panel de control* | *Opciones avanzadas de procesamiento y control* |
+
+### **Herramientas de Configuración**
+
+El sistema incluye herramientas interactivas que simplifican la configuración de las zonas de análisis. Con solo unos clics, puedes definir líneas virtuales para el conteo de personas y zonas poligonales para el seguimiento de comportamientos.
+
+| ![Interfaz para la creación de líneas virtuales para el conteo de entradas y salidas.](extras/Imagenes/crear_linea.jpg) | ![Interfaz para la definición de zonas poligonales para el análisis detallado de comportamiento.](extras/Imagenes/Crear_zonas.jpg) |
+| :---: | :---: |
+| *Definición de líneas virtuales (`crear_linea.py`)* | *Creación de zonas poligonales (`crear_zonas.py`)* |
+
+### **Módulo de Conteo de Personas**
+
+El módulo de conteo utiliza el modelo YOLOv5 para detectar y cuantificar a las personas que cruzan las líneas definidas. Puedes elegir visualizar el vídeo con o sin pixelado para proteger la privacidad.
+
+| ![Sistema de conteo de personas sin aplicar el pixelado de privacidad.](extras/Imagenes/conteo_sinpixelado.jpg) | ![Mismo sistema de conteo con pixelado en tiempo real de los individuos detectados.](extras/Imagenes/conteo_pixelado.jpg) |
+| :---: | :---: |
+| *Conteo sin pixelado en tiempo real* | *Conteo con pixelado para mayor privacidad* |
+
+### **Módulo de Tracking y Mapa de Calor**
+
+El módulo de seguimiento avanzado, basado en YOLOv8 y DeepSORT, permite un monitoreo detallado de las trayectorias y genera mapas de calor para identificar las zonas de mayor afluencia.
+
+| ![Sistema de seguimiento avanzado mostrando las trayectorias de los individuos identificados.](extras/Imagenes/tra2.jpg) | ![Mapa de calor generado a partir del movimiento de los individuos, destacando en colores cálidos las zonas de alta afluencia.](extras/Imagenes/mapas_calor.jpg) |
+| :---: | :---: |
+| *Seguimiento de trayectorias en vivo* | *Visualización del mapa de calor generado* |
 ## Autor
 - **Nombre:** Guillermo
 - **Máster:** [Nombre del Máster]
