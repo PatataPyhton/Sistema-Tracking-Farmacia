@@ -28,7 +28,7 @@
 | **Interfaz intuitiva** | Diseño pensado para usuarios no técnicos con CustomTkinter |
 
 
-## 🖼️ Galería
+## 🌟 Galería
 
 ### **Interfaz Principal**
 
@@ -61,10 +61,7 @@ El módulo de seguimiento avanzado, basado en YOLOv8 y DeepSORT, permite un moni
 | ![Sistema de seguimiento avanzado mostrando las trayectorias de los individuos identificados.](extras/Imagenes/tra2.jpg) | ![Mapa de calor generado a partir del movimiento de los individuos, destacando en colores cálidos las zonas de alta afluencia.](extras/Imagenes/mapas_calor.jpg) |
 | :---: | :---: |
 | *Seguimiento de trayectorias en vivo* | *Visualización del mapa de calor generado* |
-## Autor
-- **Nombre:** Guillermo
-- **Máster:** [Nombre del Máster]
-- **Fecha:** [Fecha Actual]
+
 
 ## Resumen
 Este Trabajo Fin de Máster (TFM) presenta un sistema de conteo y seguimiento de personas en entornos de farmacias utilizando visión por computadora y aprendizaje profundo. El sistema utiliza modelos preentrenados de YOLO (You Only Look Once) para la detección de objetos, específicamente personas, y algoritmos de seguimiento para monitorear su movimiento a través de zonas definidas y líneas de conteo.
