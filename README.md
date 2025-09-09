@@ -93,30 +93,7 @@ El objetivo principal es proporcionar herramientas para analizar el flujo de cli
 - **JSON** para almacenamiento de configuraciones y datos.
 
 ### Flujo de Trabajo
-```mermaid
-graph TD
-    A[Interfaz Gráfica] -->|Pestaña Herramientas| B[Configuración]
-    B --> B1[Definir Líneas Virtuales]
-    B --> B2[Definir Zonas Poligonales]
-    A -->|Pestaña Procesamiento| C[Captura y Detección]
-    C --> C1[Conteo Básico YOLOv5]
-    C --> C2[Tracking Avanzado YOLOv8+DeepSORT]
-    C1 --> D[Exportación]
-    C2 --> D
-    D --> D1[datos_conteo/ JSON]
-    D --> D2[datos_tracking/ JSON]
-    D --> D3[heatmaps/ PNG]
-    
-    classDef phase fill:#f9f,stroke:#333,stroke-width:2px;
-    classDef module fill:#ccf,stroke:#333;
-    classDef output fill:#cfc,stroke:#333;
-    
-    class A phase;
-    class B,B1,B2 phase;
-    class C,C1,C2 phase;
-    class D,D1,D2,D3 phase;
-    class C1,C2 module;
-    class D1,D2,D3 output;
+
 ```
 
 ### Componentes Principales
@@ -145,13 +122,11 @@ graph TD
 
 ## Estructura del Proyecto
 ```
-i:/TFM/gui4/
 ├── conteo.py
 ├── crear_linea.py
 ├── crear_zonas.py
 ├── README.md
 ├── requirements.txt
-├── tfm.md
 ├── tracking.py
 ├── uiFarmacia_logo.py
 ├── yolov5s.pt
@@ -281,32 +256,12 @@ El sistema sigue un flujo estructurado en cuatro fases:
 }
 ```
 
-## Limitaciones y Trabajo Futuro
-- El sistema está optimizado para establecimientos de tamaño pequeño a mediano con espacios de distribución relativamente abiertos.
-- Requiere condiciones de iluminación estándar de espacios comerciales para funcionamiento óptimo.
-- No incluye integración directa con sistemas de punto de venta existentes (aunque el formato JSON facilita futuras integraciones).
-- Actualmente soporta una única cámara por módulo (conteo o tracking), aunque la interfaz permite cambiar entre fuentes de video.
-- Mejoras futuras: predicción de picos de afluencia, integración con sensores IoT, y análisis predictivo.
 
-## Conclusiones
-Este sistema proporciona una base sólida para el análisis de flujo en farmacias, con potencial para expansión en aplicaciones comerciales.
-
-## 🤝 Contribución
-
-¡Las contribuciones son bienvenidas! Si deseas mejorar este proyecto, sigue estos pasos:
-
-1. Haz un fork del repositorio
-2. Crea una nueva rama (`git checkout -b feature/nueva-caracteristica`)
-3. Realiza tus cambios
-4. Haz commit de tus cambios (`git commit -am 'Agrega nueva característica'`)
-5. Haz push a la rama (`git push origin feature/nueva-caracteristica`)
-6. Crea un nuevo Pull Request
-
-## 🙏 Créditos
+##  Créditos
 
 Este proyecto fue desarrollado como Trabajo Fin de Máster por:
 
-- **Guillermo** - [koikawe](https://github.com/koikawe)
+- **Guillermo** - [PatataPython](https://github.com/koikawe)
 
 Agradecimientos especiales a:
 - [Ultralytics](https://ultralytics.com/) por los modelos YOLO
