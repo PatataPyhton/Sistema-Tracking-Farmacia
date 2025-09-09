@@ -275,7 +275,7 @@ El sistema sigue un flujo estructurado en cuatro fases:
 
 Este proyecto fue desarrollado como Trabajo Fin de Máster por:
 
-- **Guillermo** - [PatataPython]([https://github.com/PatataPyhton])
+- **Guillermo** - [PatataPython](https://github.com/PatataPyhton/).
 
 Agradecimientos especiales a:
 - [Ultralytics](https://ultralytics.com/) por los modelos YOLO
