@@ -146,7 +146,6 @@ graph TD
 
 ## Estructura del Proyecto
 ```
-​```
 ├── conteo.py
 ├── crear_linea.py
 ├── crear_zonas.py
@@ -165,7 +164,7 @@ graph TD
 ├── Logo/
 │   └── logo.jpg
 └── videos/
-​```
+```
 
 ## 🛠️ Instalación
 
