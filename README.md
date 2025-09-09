@@ -1,7 +1,7 @@
 <div align="center">
   <img src="Logo/logo.jpg" width="150" alt="Logo del Sistema">
   <h1 align="center">Sistema de Conteo y Seguimiento de Personas en Farmacias</h1>
-  <p align="center">Análisis avanzado de comportamiento de clientes mediante visión por computadora</p>
+  <p align="center">Análisis avanzado de comportamiento de clientes mediante visión por ordenador</p>
 </div>
 
 <div align="center">
