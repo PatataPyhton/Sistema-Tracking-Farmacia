@@ -94,6 +94,30 @@ El objetivo principal es proporcionar herramientas para analizar el flujo de cli
 
 ### Flujo de Trabajo
 
+```mermaid
+graph TD
+    A[Interfaz Gráfica] -->|Pestaña Herramientas| B[Configuración]
+    B --> B1[Definir Líneas Virtuales]
+    B --> B2[Definir Zonas Poligonales]
+    A -->|Pestaña Procesamiento| C[Captura y Detección]
+    C --> C1[Conteo Básico YOLOv5]
+    C --> C2[Tracking Avanzado YOLOv8+DeepSORT]
+    C1 --> D[Exportación]
+    C2 --> D
+    D --> D1[datos_conteo/ JSON]
+    D --> D2[datos_tracking/ JSON]
+    D --> D3[heatmaps/ PNG]
+
+    classDef phase fill:#f9f,stroke:#333,stroke-width:2px;
+    classDef module fill:#ccf,stroke:#333;
+    classDef output fill:#cfc,stroke:#333;
+
+    class A phase;
+    class B,B1,B2 phase;
+    class C,C1,C2 phase;
+    class D,D1,D2,D3 phase;
+    class C1,C2 module;
+    class D1,D2,D3 output;
 ```
 
 ### Componentes Principales
@@ -122,6 +146,7 @@ El objetivo principal es proporcionar herramientas para analizar el flujo de cli
 
 ## Estructura del Proyecto
 ```
+​```
 ├── conteo.py
 ├── crear_linea.py
 ├── crear_zonas.py
@@ -140,7 +165,7 @@ El objetivo principal es proporcionar herramientas para analizar el flujo de cli
 ├── Logo/
 │   └── logo.jpg
 └── videos/
-```
+​```
 
 ## 🛠️ Instalación
 
@@ -151,18 +176,18 @@ El objetivo principal es proporcionar herramientas para analizar el flujo de cli
 ### Pasos de instalación
 1. Clonar el repositorio:
    ```bash
-   git clone https://github.com/PatataPyhton/farmacia_traking_TFM.git
-   cd farmacia_traking_TFM
+git clone https://github.com/PatataPyhton/farmacia_traking_TFM.git
+cd farmacia_traking_TFM
    ```
 2. Crear y activar un entorno virtual (recomendado):
    ```bash
-   python -m venv venv
-   venv\Scripts\activate  # Windows
-   # source venv/bin/activate  # Linux/Mac
+python -m venv venv
+venv\Scripts\activate  # Windows
+# source venv/bin/activate  # Linux/Mac
    ```
 3. Instalar dependencias:
    ```bash
-   pip install -r requirements.txt
+pip install -r requirements.txt
    ```
 4. Los modelos YOLOv5s y YOLOv8s ya están incluidos en el repositorio
 
@@ -172,7 +197,7 @@ El sistema se opera completamente desde la interfaz gráfica, que sirve como pun
 
 1. **Iniciar la interfaz**:
    ```bash
-   python uiFarmacia_logo.py
+python uiFarmacia_logo.py
    ```
 
 2. **Configuración Inicial** (pestaña "Herramientas"):
