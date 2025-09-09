@@ -108,9 +108,9 @@ graph TD
     D --> D2[datos_tracking/ JSON]
     D --> D3[heatmaps/ PNG]
 
-    classDef phase fill:#f9f,stroke:#333,stroke-width:2px;
-    classDef module fill:#ccf,stroke:#333;
-    classDef output fill:#cfc,stroke:#333;
+    classDef phase fill:#lightgrey,stroke:#333,stroke-width:2px;
+    classDef module fill:#lightblue,stroke:#333;
+    classDef output fill:#lightgreen,stroke:#333;
 
     class A phase;
     class B,B1,B2 phase;
