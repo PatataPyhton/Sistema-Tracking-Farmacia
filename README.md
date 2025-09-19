@@ -167,7 +167,7 @@ graph TD
 ### Pasos de instalación
 1.  Clonar el repositorio:
     ```bash
-    git clone https://github.com/PatataPyhton/farmacia_traking_TFM.git
+    git clone https://github.com/PatataPyhton/Sistema-Tracking-Farmacia.git
     cd farmacia_traking_TFM
     ```
 2.  Crear y activar un entorno virtual (recomendado):
